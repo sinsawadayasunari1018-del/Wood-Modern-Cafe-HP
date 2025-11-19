@@ -390,4 +390,34 @@
       height: 260px;
     }
   }
+
+  @media (max-width: 480px) {
+    .menu-content h2 {
+      font-size: 1.6rem;
+      letter-spacing: 1px; /* 文字間を詰める */
+      white-space: nowrap; /* 強制的に1行で収める */
+    }
   
+    .menu-content p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  
+    .menu-btn {
+      font-size: 0.9rem;
+      padding: 10px 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .concept-content .title {
+      font-size: 1.2rem;
+      white-space: nowrap;
+    }
+  
+    .concept-content p {
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+  }
+    

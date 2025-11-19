@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DRINK | Saredo Cafe</title>
+  <style>
+    :root {
+      --bg: #faf8f5;
+      --primary: #5c3b1e;
+      --accent: #a47449;
+      --muted: #665f59;
+      --radius: 12px;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: #2c241c;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      padding: 16px 5%;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header a {
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    .menu-intro {
+      max-width: 800px;
+      margin: 80px auto 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 1.1rem;
+      padding: 0 5%;
+    }
+
+    .menu-list {
+      max-width: 1000px;
+      margin: 0 auto 100px;
+      padding: 0 5%;
+    }
+
+    .menu-item {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      margin-bottom: 60px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      transition: transform 0.3s ease;
+    }
+    .menu-item:hover {
+      transform: translateY(-4px);
+    }
+    .menu-item:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .menu-item img {
+      width: 100%;
+      max-width: 420px;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .menu-info {
+      flex: 1;
+      padding: 40px 50px;
+      background: #f9f6f1;
+    }
+    .menu-info h2 {
+      color: var(--primary);
+      margin-bottom: 12px;
+      font-size: 1.6rem;
+    }
+    .menu-info p {
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+    .price {
+      font-weight: 700;
+      color: var(--accent);
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 14px;
+      color: #888;
+      border-top: 1px solid rgba(0,0,0,0.05);
+      background: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .menu-item {
+        flex-direction: column !important;
+      }
+      .menu-info {
+        padding: 30px;
+      }
+      .menu-item img {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="top page.html">← ホームに戻る</a>
+  </header>
+
+  <section class="hero">
+    <h1>DRINK MENU</h1>
+  </section>
+
+  <div class="menu-intro">
+    <p>心を整える一杯を、木の香りに包まれたカフェ空間で。<br>
+    スペシャルティコーヒーから季節のハーブティーまで、多彩なドリンクをご用意しています。</p>
+  </div>
+
+  <section class="menu-list">
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="コーヒー">
+      <div class="menu-info">
+        <h2>ハンドドリップコーヒー</h2>
+        <p>豆の個性を丁寧に引き出した、香り高い一杯。<br>焙煎度合いから抽出方法まで、こだわりを込めています。</p>
+        <div class="price">¥580</div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="カフェラテ">
+      <div class="menu-info">
+        <h2>カフェラテ</h2>
+        <p>まろやかなミルクとエスプレッソの絶妙なバランス。<br>ラテアートと共にほっとする時間をどうぞ。</p>
+        <div class="price">¥620</div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80" alt="ハーブティー">
+      <div class="menu-info">
+        <h2>季節のハーブティー</h2>
+        <p>心身をリラックスさせる、香り豊かなブレンドティー。<br>季節ごとのおすすめをお楽しみください。</p>
+        <div class="price">¥680</div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="ワイン">
+      <div class="menu-info">
+        <h2>グラスワイン（赤・白）</h2>
+        <p>料理とのマリアージュを愉しめる厳選ワイン。<br>ソムリエおすすめの一本をご提供します。</p>
+        <div class="price">¥750〜</div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Saredo Cafe | 木の温もりと季節の香り
+  </footer>
+</body>
+</html>

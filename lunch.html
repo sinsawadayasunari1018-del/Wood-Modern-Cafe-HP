@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LUNCH | Saredo Cafe</title>
+  <style>
+    :root {
+      --bg: #fbf9f6;
+      --primary: #6b4b3e;
+      --accent: #a67c52;
+      --highlight: #a2b59f;
+      --muted: #746c65;
+      --radius: 14px;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: #2f261f;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      padding: 16px 5%;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header a {
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    .menu-intro {
+      max-width: 820px;
+      margin: 80px auto 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 1.1rem;
+      padding: 0 5%;
+    }
+
+    .menu-list {
+      max-width: 1000px;
+      margin: 0 auto 100px;
+      padding: 0 5%;
+    }
+
+    .menu-item {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      overflow: hidden;
+      margin-bottom: 60px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .menu-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+    }
+    .menu-item:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .menu-item img {
+      width: 100%;
+      max-width: 420px;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .menu-info {
+      flex: 1;
+      padding: 40px 50px;
+      background: #f9f7f3;
+    }
+    .menu-info h2 {
+      color: var(--primary);
+      margin-bottom: 12px;
+      font-size: 1.6rem;
+    }
+    .menu-info p {
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+    .price {
+      font-weight: 700;
+      color: var(--highlight);
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 14px;
+      color: #888;
+      border-top: 1px solid rgba(0,0,0,0.05);
+      background: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .menu-item {
+        flex-direction: column !important;
+      }
+      .menu-info {
+        padding: 30px;
+      }
+      .menu-item img {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="top page.html">← ホームに戻る</a>
+  </header>
+
+  <section class="hero">
+    <h1>LUNCH MENU</h1>
+  </section>
+
+  <div class="menu-intro">
+    <p>体にも心にも優しいランチタイムを。<br>
+    季節の食材をふんだんに使った、彩り豊かなプレートをご用意しています。<br>
+    女性に人気の“バランス×映え”を意識したメニューです。</p>
+  </div>
+
+  <section class="menu-list">
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1528731708534-816fe59f90cb?auto=format&fit=crop&w=800&q=80" alt="サラダプレート">
+      <div class="menu-info">
+        <h2>グレインズサラダプレート</h2>
+        <p>キヌアや雑穀を使った、栄養たっぷりのサラダランチ。<br>ドレッシングは自家製レモンバルサミコ。</p>
+        <div class="price">¥1,280</div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="パスタランチ">
+      <div class="menu-info">
+        <h2>季節野菜のペペロンチーノ</h2>
+        <p>旬の彩り野菜をたっぷり使ったオリーブ香るパスタ。<br>カフェでも満足できるボリュームランチです。</p>
+        <div class="price">¥1,180</div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="サンドイッチプレート">
+      <div class="menu-info">
+        <h2>アボカドチキンサンド</h2>
+        <p>グリルチキンとアボカドの王道コンビ。<br>ライ麦パンの香ばしさがクセになります。</p>
+        <div class="price">¥1,100</div>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1606756790138-295b3e4a8c64?auto=format&fit=crop&w=800&q=80" alt="スープランチ">
+      <div class="menu-info">
+        <h2>季節のスープ＆ブレッドセット</h2>
+        <p>日替わりスープと自家製パンのセット。<br>軽めのランチや午後のリセットタイムにおすすめ。</p>
+        <div class="price">¥950</div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Saredo Cafe | からだにやさしいランチタイムを
+  </footer>
+</body>
+</html>
